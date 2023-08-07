@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[]={1,2,7,3,6,5,8};
+    int s=1;
+    int e=6;
+    int n=7;
+    int sum_from_start,sum_from_end;
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<" ";
+    cout<<endl;
+    while(s<e)
+    {
+        sum_from_start+=arr[s-1];
+        arr[s-1]=0;
+        sum_from_end+=arr[e];
+        arr[e]=0;
+        if(sum_from_start<=sum_from_end)
+        s=s+1;
+        else
+        e=e-1;
+    }
+//Printing the index
+    cout<<s-1<<""<<endl;
+    int sum=0;
+    for(int i=0;i<n;i++)
+    sum+=arr[i];
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<" ";
+    cout<<endl;
+    cout<<sum<<endl;
+    cout<<sum_from_start<<endl;
+    cout<<sum_from_end<<endl;
+}
