@@ -12,7 +12,7 @@ int main()
     for(int i=0;i<n;i++)
     cout<<arr[i]<<" ";
     cout<<endl;
-    while(s<e)
+    while(s<e) 
     {
         sum_from_start+=arr[s-1];
         arr[s-1]=0;
