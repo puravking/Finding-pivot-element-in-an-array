@@ -9,7 +9,7 @@ int main()
     int e=6;
     int n=7;
     int sum_from_start,sum_from_end; 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) 
     cout<<arr[i]<<" ";
     cout<<endl;
     while(s<e) 
