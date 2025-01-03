@@ -8,7 +8,7 @@ int main()
     int s=1;
     int e=6;
     int n=7;
-    int sum_from_start,sum_from_end; 
+    int sum_from_start,sum_from_end;
     for(int i=0;i<n;i++) 
     cout<<arr[i]<<" ";
     cout<<endl;
